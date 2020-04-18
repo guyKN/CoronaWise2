@@ -3,12 +3,12 @@ IMPORTANT NOTE: this app does ask you to provide your location when first launch
 
 ANOTHER IMPORTANT NOTE: After further testing, it seems that this app only works for certain types of android devices based on the way diffrent devices handle bluetooth. I can't gurantee that It'll work on all types of devices. 
 
-# Goal
+## Goal
 
 The goal of this app is to use bluetooth to contact trace without being Invasive to people's privacy. 
 
 
-# How this project works
+## How this project works
 
 * When the app is opened for the first time, it creates a private key and a public key unique to the user. 
 
@@ -23,3 +23,9 @@ The goal of this app is to use bluetooth to contact trace without being Invasive
 * When a user is sick, the app generates a signature for the user using the user's Private key by using the RSA algorithm, and uploads it to the AWS server. 
 
 * To check if a user has been exposed, the app downloads all signatures from the AWS server, and for each one, it compares with all the keys on the device. If a signature matches a key, then the user is has been exposed. Otherwise, the user has not been exposed. 
+
+## Future improvement
+
+* Test more devices: currently, it seems that the app only works with some devices, and has difficulty connecting. I intend to improve this. 
+* Test Bluetooth RSSI: Currently the thresholds for the RSSI to be within 6 feet was tested on just two devices, so that means that if some devices have stronger or weaker bluetooth signals, the distance won't be mesured accuratly. 
+* Battery life: Currently, the app continously scans for devices, which drains the battery very quickly. Optimization needs to be done in order to reduce battery usage and heat. 
