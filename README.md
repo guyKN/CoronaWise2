@@ -7,6 +7,7 @@ ANOTHER IMPORTANT NOTE: After further testing, it seems that this app only works
 
 The goal of this app is to use bluetooth to contact trace without being Invasive to people's privacy. 
 
+Demo that shows the concept: https://www.youtube.com/watch?v=5CscPNmv89A. 
 
 ## How this project works
 
