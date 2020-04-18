@@ -3,6 +3,8 @@ IMPORTANT NOTE: this app does ask you to provide your location when first launch
 
 ANOTHER IMPORTANT NOTE: After further testing, it seems that this app only works for certain types of android devices based on the way diffrent devices handle bluetooth. I can't gurantee that It'll work on all types of devices. 
 
+Download the app: https://github.com/guyKN/CoronaWise2/blob/master/CoronaWise.apk.
+
 ## Goal
 
 The goal of this app is to use bluetooth to contact trace without being Invasive to people's privacy. 
