@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/section1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/tab1title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20sp"
+            android:text="@string/tab1_title"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tab1paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab1title"
+            android:text="@string/tab1paragraph"
+            android:textSize="25sp"
+            android:paddingTop="10sp"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tab1status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/refresh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab1paragraph"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25sp"
+            android:text="@string/refresh"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--Section 2 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/section2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have not been next any other users."
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:id="@+id/t1"
+            android:textSize="50sp"
+            android:gravity="center"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <!--Section 3 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+android:id="@+id/section3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+
+
+    <TextView
+        android:id="@+id/tab3title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20sp"
+        android:text="@string/tab3_title"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tab3paragraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab3title"
+        android:text="@string/tab3paragraph"
+        android:textSize="25sp"
+        android:paddingTop="10sp"
+        android:paddingLeft="25sp"
+        android:paddingRight="25sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tab3status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/uploadSignature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab3paragraph"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:layout_marginBottom="30sp"
+        android:layout_marginTop="30sp"/>
+
+
+    <Button
+        android:id="@+id/uploadSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_marginBottom="60sp"
+        android:text="@string/uplad_signature"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <!--Section 4 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/section4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/tab4title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20sp"
+            android:text="@string/tab4_title"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tab4paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab4title"
+            android:text="@string/tab4paragraph"
+            android:textSize="25sp"
+            android:paddingTop="10sp"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tab4status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab4paragraph"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:layout_marginBottom="60sp"
+            android:text="@string/reset"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
